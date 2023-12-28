@@ -5,10 +5,10 @@ const $appDomElement = document.getElementById("app"); //Container
 const root = ReactDOM.createRoot($appDomElement); //Now de container is the root
 const craft = React.createElement;
 
-const $button = craft("button", { "data-id": 123 }, "Me gusta");
+const $button = craft("button", { "data-id": 123 }, "Me gusta"); //Elements to render
 const $button2 = craft("button", { "data-id": 456 }, "Me gusta");
 const $button3 = craft("button", { "data-id": 789 }, "Me gusta");
 
-const $app = craft("React.Fragment", null[($button, $button2, $button3)]);
+const $app = craft("React.Fragment", null[($button, $button2, $button3)]); //Similar as fragment
 
-root.render($app);
+root.render($app); //Final render
