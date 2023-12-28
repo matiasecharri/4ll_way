@@ -84,3 +84,15 @@
   margin-top: 3.4px;
   margin-left: 3px;
 }
+
+@media (width <= 375px) {
+  .twitter-card {
+    width: 340px;
+  }
+}
+
+@media (width <= 320px) {
+  .twitter-card {
+    width: 295px;
+  }
+}
