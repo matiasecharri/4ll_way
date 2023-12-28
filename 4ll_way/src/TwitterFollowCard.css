@@ -1,0 +1,79 @@
+.twitter-card {
+  cursor: pointer;
+  background-color: #f7f9f9;
+  display: flex;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.twitter-card:hover {
+  background-color: #eff1f1;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.twitter-card header {
+  display: flex;
+  width: 75%;
+  gap: 10px;
+}
+
+.twitter-card header strong {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #0f1419;
+}
+
+.twitter-card header strong:hover {
+  text-decoration: underline;
+}
+
+.twitter-card header span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #536471;
+}
+
+.twitter-card img {
+  height: 40px;
+  width: 40px;
+  border-radius: 360px;
+  -webkit-border-radius: 360px;
+  -moz-border-radius: 360px;
+  -ms-border-radius: 360px;
+  -o-border-radius: 360px;
+}
+
+.twitter-card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.twitter-card button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #f9f9fa;
+  background-color: #0f1419;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border: none;
+  padding: 8px 15px;
+}
