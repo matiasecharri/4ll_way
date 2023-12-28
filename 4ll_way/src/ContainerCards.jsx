@@ -24,6 +24,7 @@ export const ContainerCards = () => {
           "https://pbs.twimg.com/profile_images/1506980371627450369/YEfkGEEc_400x400.jpg"
         }
         isFollowing={false}
+        verified={true}
       />
       <TwitterFollowCard
         userName={"elonmusk"}
@@ -32,6 +33,7 @@ export const ContainerCards = () => {
           "https://pbs.twimg.com/profile_images/1683325380441128960/yRsRRjGO_400x400.jpg"
         }
         isFollowing={false}
+        verified={true}
       />
       {fillWithRandomCards(array)}
       <article className="container-cards_article-bottom">
