@@ -1,0 +1,61 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container-cards {
+  background-color: #f7f9f9;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-cards_article {
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+
+.container-cards_article h3 {
+  font-weight: 800;
+  font-size: 20px;
+  color: #0f1419;
+  margin-left: 15px;
+}
+
+.container-cards_article-bottom {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-radius: 0px 0px 20px 20px;
+  -webkit-border-radius: 0px 0px 20px 20px;
+  -moz-border-radius: 0px 0px 20px 20px;
+  -ms-border-radius: 0px 0px 20px 20px;
+  -o-border-radius: 0px 0px 20px 20px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.container-cards_article-bottom h4 {
+  font-weight: 400;
+  font-size: 15px;
+  color: #56bbff;
+  margin-left: 15px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.container-cards_article-bottom:hover {
+  background-color: #eff1f1;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
