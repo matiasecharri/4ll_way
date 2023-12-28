@@ -1,6 +1,6 @@
 .twitter-card {
   cursor: pointer;
-  background-color: #f7f9f9;
+  background-color: var(--soft-grey);
   display: flex;
   width: 350px;
   display: flex;
@@ -15,7 +15,7 @@
 }
 
 .twitter-card:hover {
-  background-color: #eff1f1;
+  background-color: var(--hover-grey);
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -34,7 +34,7 @@
   font-size: 15px;
   font-weight: 700;
   line-height: 20px;
-  color: #0f1419;
+  color: var(--off-black);
 }
 
 .twitter-card header strong:hover {
@@ -45,7 +45,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
-  color: #536471;
+  color: var(--text-grey);
 }
 
 .twitter-card img {
@@ -68,8 +68,8 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  color: #f9f9fa;
-  background-color: #0f1419;
+  color: var(--button-color);
+  background-color: var(--off-black);
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
