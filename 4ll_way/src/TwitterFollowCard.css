@@ -24,6 +24,7 @@
 }
 
 .twitter-card header {
+  position: relative;
   display: flex;
   width: 75%;
   gap: 10px;
@@ -76,4 +77,10 @@
   -o-border-radius: 30px;
   border: none;
   padding: 8px 15px;
+}
+.twitter-card header strong svg {
+  width: 15px;
+  position: absolute;
+  margin-top: 3.4px;
+  margin-left: 3px;
 }
