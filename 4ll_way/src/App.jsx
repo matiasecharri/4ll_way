@@ -1,9 +1,9 @@
-import { ContainerCards } from "./ContainerCards";
+import { View } from "./View";
 
 export const App = () => {
   return (
     <>
-      <ContainerCards></ContainerCards>
+      <View></View>
     </>
   );
 };
