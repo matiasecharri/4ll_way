@@ -56,7 +56,10 @@ export const ContainerCards = () => {
         }
         isFollowing
         verified
-      />
+      >
+        Elon Muslim
+        {/*✅03 <--AS IN HTML, AN ELEMENT INSIDE OF AN ELEMENT IS THE CHILDREN*/}
+      </TwitterFollowCard>
       {fillWithRandomCards(array)}
 
       <article className="container-cards_article-bottom">

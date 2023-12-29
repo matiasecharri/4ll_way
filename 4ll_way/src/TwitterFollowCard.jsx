@@ -6,6 +6,7 @@ export const TwitterFollowCard = ({
   templateImg,
   userName,
   name,
+  children /*✅01 <----------------Special PROP: CHILDREN*/,
   avatar,
   isFollowing,
   verified,
@@ -17,7 +18,8 @@ export const TwitterFollowCard = ({
         <img src={avatar || templateImg} alt={`${name} avatar`} />
         <div className="twitter-card__info">
           <strong>
-            {name || templateName(null)}
+            {children || name || templateName(null)}{" "}
+            {/*✅02 USING CHILDREN, (If we have one)*/}
             {verified === true ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +44,7 @@ export const TwitterFollowCard = ({
         </div>
       </header>
       <aside>
-        <button>Follow</button>
+        <button>Follow {/*<----------Children*/}</button>
       </aside>
     </article>
   );
