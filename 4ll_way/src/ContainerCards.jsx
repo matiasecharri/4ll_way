@@ -1,8 +1,18 @@
 import "./ContainerCards.css";
 import { TwitterFollowCard } from "./TwitterFollowCard";
+
+const addAt = userName => `@${userName || "johndoe"}`;
+const johnDoeName = name => name || "John Doe";
+
 const array = new Array(2).fill(0);
 const fillWithRandomCards = array => {
-  return array.map((element, index) => <TwitterFollowCard key={index} />);
+  return array.map((element, index) => (
+    <TwitterFollowCard
+      formatUserName={addAt}
+      templateName={johnDoeName}
+      key={index}
+    />
+  ));
 };
 
 export const ContainerCards = () => {
@@ -12,12 +22,14 @@ export const ContainerCards = () => {
         <h3>You might like</h3>
       </article>
       <TwitterFollowCard
+        formatUserName={addAt}
         userName={"matiasecharri_"}
         name={"Basura Records"}
         avatar={"https://avatars.githubusercontent.com/u/114617122?v=4"}
         isFollowing={false}
       />
       <TwitterFollowCard
+        formatUserName={addAt}
         userName={"DianaMondino"}
         name={"Diana Mondino"}
         avatar={
@@ -27,6 +39,7 @@ export const ContainerCards = () => {
         verified
       />
       <TwitterFollowCard
+        formatUserName={addAt}
         userName={"elonmusk"}
         name={"Elon Musk"}
         avatar={

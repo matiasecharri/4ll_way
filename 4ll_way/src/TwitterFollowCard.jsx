@@ -1,6 +1,8 @@
 import "./TwitterFollowCard.css";
 
 export const TwitterFollowCard = ({
+  formatUserName,
+  templateName,
   userName,
   name,
   avatar,
@@ -19,7 +21,7 @@ export const TwitterFollowCard = ({
         />
         <div className="twitter-card__info">
           <strong>
-            {name || "John Doe"}{" "}
+            {name || templateName(null)}
             {verified === true ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +39,7 @@ export const TwitterFollowCard = ({
               </svg>
             ) : null}
           </strong>
-          <span>@{userName || "johndoe"} </span>
+          <span>{formatUserName(userName) || null} </span>
         </div>
       </header>
       <aside>
