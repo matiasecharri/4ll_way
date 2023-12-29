@@ -31,7 +31,7 @@ export const ContainerCards = () => {
       </article>
       <TwitterFollowCard
         userName={"matiasecharri_"}
-        name={"Basura Records"}
+        name={"Matias"}
         formatUserName={format} //🚀04 FINAL: The empty parameter function now has "format" as an argument.
         avatar={"https://avatars.githubusercontent.com/u/114617122?v=4"}
         isFollowing={false}
