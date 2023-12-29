@@ -23,6 +23,10 @@
   -o-transition: 0.2s;
 }
 
+.twitter-card:hover button {
+  background-color: var(--off-black-hover);
+}
+
 .twitter-card header {
   position: relative;
   display: flex;
@@ -77,6 +81,15 @@
   -o-border-radius: 30px;
   border: none;
   padding: 8px 15px;
+}
+
+.twitter-card button:hover {
+  background-color: var(--off-black-hover);
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
 }
 .twitter-card header strong svg {
   width: 15px;

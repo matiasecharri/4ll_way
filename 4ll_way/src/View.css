@@ -1,0 +1,38 @@
+.view {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 1300px;
+  z-index: 99;
+  position: relative;
+  background-color: var(--full-white);
+}
+
+.view-header {
+  width: 300px;
+  height: 100vh;
+  background-color: var(--full-white);
+  padding-top: 10px;
+}
+
+.view-main {
+  width: 600px;
+  height: 100vh;
+  background-color: var(--full-white);
+  border-left: 1px solid var(--soft-grey);
+  border-right: 1px solid var(--soft-grey);
+  padding-top: 10px;
+}
+
+.view-aside {
+  gap: 16px;
+  flex: auto;
+  height: 100vh;
+  background-color: var(--full-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+}

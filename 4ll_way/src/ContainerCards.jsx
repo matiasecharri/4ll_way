@@ -2,7 +2,7 @@ import "./ContainerCards.css";
 import { TwitterFollowCard } from "./TwitterFollowCard";
 const array = new Array(2).fill(0);
 const fillWithRandomCards = array => {
-  return array.map(element => <TwitterFollowCard />);
+  return array.map((element, index) => <TwitterFollowCard key={index} />);
 };
 
 export const ContainerCards = () => {
@@ -24,7 +24,7 @@ export const ContainerCards = () => {
           "https://pbs.twimg.com/profile_images/1506980371627450369/YEfkGEEc_400x400.jpg"
         }
         isFollowing={false}
-        verified={true}
+        verified
       />
       <TwitterFollowCard
         userName={"elonmusk"}
@@ -32,10 +32,11 @@ export const ContainerCards = () => {
         avatar={
           "https://pbs.twimg.com/profile_images/1683325380441128960/yRsRRjGO_400x400.jpg"
         }
-        isFollowing={false}
-        verified={true}
+        isFollowing
+        verified
       />
       {fillWithRandomCards(array)}
+
       <article className="container-cards_article-bottom">
         <h4>Show More</h4>
       </article>
