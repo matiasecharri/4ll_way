@@ -1,8 +1,9 @@
 import "./TwitterFollowCard.css";
 
 export const TwitterFollowCard = ({
-  formatUserName,
+  formatUserName, // 🚀01: Creating a parameter that will receive a function (later).
   templateName,
+  templateImg,
   userName,
   name,
   avatar,
@@ -12,13 +13,7 @@ export const TwitterFollowCard = ({
   return (
     <article className="twitter-card" data-follow={isFollowing}>
       <header>
-        <img
-          src={
-            avatar ||
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtACJo_dyqywX0fgg3P3hY2IDwR7J7AklVNfIqbeXk0Q&s"
-          }
-          alt={`${name} avatar`}
-        />
+        <img src={avatar || templateImg} alt={`${name} avatar`} />
         <div className="twitter-card__info">
           <strong>
             {name || templateName(null)}
@@ -40,6 +35,7 @@ export const TwitterFollowCard = ({
             ) : null}
           </strong>
           <span>{formatUserName(userName) || null} </span>
+          {/*🚀02: Calling the paramterFunction here, but is still empty, we are going to fill it "ContainerCards", we are also setting the possiblity of having a null here, then if we dont define userName is going to be a null, and we can do things with that.*/}
         </div>
       </header>
       <aside>

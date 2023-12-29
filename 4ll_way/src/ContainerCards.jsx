@@ -1,15 +1,19 @@
 import "./ContainerCards.css";
 import { TwitterFollowCard } from "./TwitterFollowCard";
 
-const addAt = userName => `@${userName || "johndoe"}`;
+const format = userName => `@${userName || "johndoe"}`; //🚀03:The function that we are going to use as an argument of: "formatUserName if the userName is not a NULL, is going to use the userName and format that. Any other case (NULL) is going to use johndoe"
 const johnDoeName = name => name || "John Doe";
 
 const array = new Array(2).fill(0);
 const fillWithRandomCards = array => {
   return array.map((element, index) => (
     <TwitterFollowCard
-      formatUserName={addAt}
+      formatUserName={format}
       templateName={johnDoeName}
+      // userName={"Rick"} intentionally commenting this, to test the null possibility!
+      templateImg={
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtACJo_dyqywX0fgg3P3hY2IDwR7J7AklVNfIqbeXk0Q&s"
+      }
       key={index}
     />
   ));
@@ -22,14 +26,14 @@ export const ContainerCards = () => {
         <h3>You might like</h3>
       </article>
       <TwitterFollowCard
-        formatUserName={addAt}
+        formatUserName={format} //🚀04 FINAL: The empty parameter function now has "format" as an argument.
         userName={"matiasecharri_"}
         name={"Basura Records"}
         avatar={"https://avatars.githubusercontent.com/u/114617122?v=4"}
         isFollowing={false}
       />
       <TwitterFollowCard
-        formatUserName={addAt}
+        formatUserName={format}
         userName={"DianaMondino"}
         name={"Diana Mondino"}
         avatar={
@@ -39,7 +43,7 @@ export const ContainerCards = () => {
         verified
       />
       <TwitterFollowCard
-        formatUserName={addAt}
+        formatUserName={format}
         userName={"elonmusk"}
         name={"Elon Musk"}
         avatar={
