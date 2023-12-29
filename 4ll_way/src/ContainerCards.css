@@ -63,3 +63,9 @@
   -ms-transition: 0.2s;
   -o-transition: 0.2s;
 }
+
+.auxiliar-p {
+  font-size: 0.5rem;
+  position: absolute;
+  top: 36px;
+}

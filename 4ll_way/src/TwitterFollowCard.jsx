@@ -9,6 +9,7 @@ export const TwitterFollowCard = ({
   avatar,
   isFollowing,
   verified,
+  randomElement, // 👁️01: Creating a parameter that will receive an """HTML""" element later.
 }) => {
   return (
     <article className="twitter-card" data-follow={isFollowing}>
@@ -36,6 +37,8 @@ export const TwitterFollowCard = ({
           </strong>
           <span>{formatUserName(userName) || null} </span>
           {/*🚀02: Calling the paramterFunction here, but is still empty, we are going to fill it "ContainerCards", we are also setting the possiblity of having a null here, then if we dont define userName is going to be a null, and we can do things with that.*/}
+          <span>{randomElement}</span>
+          {/*👁️02: The ""HTML"" element is going to be inside of this span.*/}
         </div>
       </header>
       <aside>
