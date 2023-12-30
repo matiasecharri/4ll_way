@@ -6,6 +6,7 @@ export const TwitterFollowCard = ({
   templateImg,
   userName,
   name,
+  name2 = "Uknown", //--------------Same as JS, is possible to assign default values to the props/params.
   children /*✅01 <----------------Special PROP: CHILDREN*/,
   avatar,
   isFollowing,

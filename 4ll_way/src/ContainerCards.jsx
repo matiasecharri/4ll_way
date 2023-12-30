@@ -58,10 +58,9 @@ export const ContainerCards = () => {
         verified
       >
         Elon Muslim
-        {/*✅03 <--AS IN HTML, AN ELEMENT INSIDE OF AN ELEMENT IS THE CHILDREN*/}
+        {/*✅03 <--AS IN HTML, AN ELEMENT INSIDE OF AN ELEMENT IS THE CHILDREN, probably if you want a really reutilizable element, passing children as a prop is a really good idea.*/}
       </TwitterFollowCard>
       {fillWithRandomCards(array)}
-
       <article className="container-cards_article-bottom">
         <h4>Show More</h4>
       </article>
