@@ -96,6 +96,7 @@
   position: absolute;
   margin-top: 3.4px;
   margin-left: 3px;
+  stroke: var(--links);
 }
 
 @media (width <= 375px) {
