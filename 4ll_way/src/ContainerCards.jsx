@@ -55,6 +55,7 @@ export const ContainerCards = () => {
         }
         isFollowing={false}
         verified
+        // {...spaceX} --> You can also overwrite props using the spread operator, careful!
       />
       <TwitterFollowCard
         userName={"elonmusk"}
