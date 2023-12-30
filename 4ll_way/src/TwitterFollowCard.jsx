@@ -1,4 +1,5 @@
 import "./TwitterFollowCard.css";
+import { useState } from "react";
 
 export const TwitterFollowCard = ({
   formatUserName, // 🚀01: Creating a parameter that will receive a function (later).
@@ -9,12 +10,30 @@ export const TwitterFollowCard = ({
   name2 = "Uknown", //--------------Same as JS, is possible to assign default values to the props/params.
   children /*✅01 <----------------Special PROP: CHILDREN*/,
   avatar,
-  isFollowing,
   verified,
   randomElement, // 👁️01: Creating a parameter that will receive an """HTML""" element later.
 }) => {
+  const [isFollowing, setIsFollowing] = useState(false);
+  console.log(isFollowing);
+
+  //useState returns an array with 2 elements, what we are doing here is destructuring the array.
+  //the first element of the array is the actualValue of the state (false)
+  //the second element of the array is a function to update the state
+
+  const text = isFollowing ? "Following" : "Follow";
+  const styleButton = isFollowing
+    ? "twitter-card-button is-following"
+    : "twitter-card-button";
+  const styleCard = isFollowing
+    ? "twitter-card is-following-card"
+    : "twitter-card";
+
+  const handleClick = () => {
+    setIsFollowing(!isFollowing);
+  };
+
   return (
-    <article className="twitter-card" data-follow={isFollowing}>
+    <article className={styleCard} data-follow={isFollowing}>
       <header>
         <img src={avatar || templateImg} alt={`${name} avatar`} />
         <div className="twitter-card__info">
@@ -45,7 +64,9 @@ export const TwitterFollowCard = ({
         </div>
       </header>
       <aside>
-        <button>Follow {/*<----------Children*/}</button>
+        <button className={styleButton} onClick={handleClick}>
+          {text}
+        </button>
       </aside>
     </article>
   );

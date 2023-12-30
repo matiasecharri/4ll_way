@@ -30,7 +30,7 @@
 .twitter-card header {
   position: relative;
   display: flex;
-  width: 75%;
+  flex: 1;
   gap: 10px;
 }
 
@@ -67,7 +67,7 @@
   flex-direction: column;
 }
 
-.twitter-card button {
+.twitter-card-button {
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
@@ -83,7 +83,7 @@
   padding: 8px 15px;
 }
 
-.twitter-card button:hover {
+.twitter-card-button:hover {
   background-color: var(--off-black-hover);
   transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -109,4 +109,22 @@
   .twitter-card {
     width: 295px;
   }
+}
+
+.is-following {
+  background-color: var(--soft-grey);
+  border: 1px solid rgba(128, 128, 128, 0.436);
+  color: var(--off-black);
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.is-following-card:hover button {
+  background-color: #f0dbdd;
+  border: 1px solid #e6cbce;
+  color: #f43e4a;
+  transition: 0.2s;
 }

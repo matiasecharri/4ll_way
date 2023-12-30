@@ -14,7 +14,6 @@ const spaceX = {
   avatar:
     "https://pbs.twimg.com/profile_images/1697749409851985920/HbrI04tM_400x400.jpg",
   formatUserName: format,
-  isFollowing: false,
   verified: true,
 }; /*Using spread operator to fill TwitterFollowCard props below*/
 const fillWithRandomCards = array => {
@@ -43,7 +42,6 @@ export const ContainerCards = () => {
         name={"Matias"}
         formatUserName={format} //🚀04 FINAL: The empty parameter function now has "format" as an argument.
         avatar={"https://avatars.githubusercontent.com/u/114617122?v=4"}
-        isFollowing={false}
         randomElement={paragraph}
       />
       <TwitterFollowCard
@@ -53,7 +51,6 @@ export const ContainerCards = () => {
         avatar={
           "https://pbs.twimg.com/profile_images/1506980371627450369/YEfkGEEc_400x400.jpg"
         }
-        isFollowing={false}
         verified
         // {...spaceX} --> You can also overwrite props using the spread operator, careful!
       />
@@ -64,7 +61,6 @@ export const ContainerCards = () => {
         avatar={
           "https://pbs.twimg.com/profile_images/1683325380441128960/yRsRRjGO_400x400.jpg"
         }
-        isFollowing
         verified
       >
         Elon Muslim
