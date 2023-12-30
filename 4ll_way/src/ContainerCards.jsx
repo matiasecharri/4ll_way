@@ -7,7 +7,16 @@ const paragraph = (
   <p className="auxiliar-p">This user is just a template.</p>
 ); /*👁️03: Creating the HTML element that is going to be inside of randomElement*/
 
-const array = new Array(2).fill(0);
+const array = new Array(1).fill(0);
+const spaceX = {
+  userName: "SpaceX",
+  name: "SpaceX",
+  avatar:
+    "https://pbs.twimg.com/profile_images/1697749409851985920/HbrI04tM_400x400.jpg",
+  formatUserName: format,
+  isFollowing: false,
+  verified: true,
+}; /*Using spread operator to fill TwitterFollowCard props below*/
 const fillWithRandomCards = array => {
   return array.map((element, index) => (
     <TwitterFollowCard
@@ -61,6 +70,8 @@ export const ContainerCards = () => {
         {/*✅03 <--AS IN HTML, AN ELEMENT INSIDE OF AN ELEMENT IS THE CHILDREN, probably if you want a really reutilizable element, passing children as a prop is a really good idea.*/}
       </TwitterFollowCard>
       {fillWithRandomCards(array)}
+      <TwitterFollowCard {...spaceX}>SpaceX</TwitterFollowCard>
+      {/*⚠️You can also use the spreadOperator to fill the props, but is not the best practice.*/}
       <article className="container-cards_article-bottom">
         <h4>Show More</h4>
       </article>
