@@ -14,7 +14,6 @@ export const TwitterFollowCard = ({
   randomElement, // 👁️01: Creating a parameter that will receive an """HTML""" element later.
 }) => {
   const [isFollowing, setIsFollowing] = useState(false);
-  console.log(isFollowing);
 
   //useState returns an array with 2 elements, what we are doing here is destructuring the array.
   //the first element of the array is the actualValue of the state (false)
