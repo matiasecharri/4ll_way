@@ -2,7 +2,7 @@ import "./View.css";
 import { ContainerCards } from "./ContainerCards";
 import { SearchBar } from "./SearchBar";
 
-//⚠️Changes propagate from the elements above to those within, like a drill.
+//⚠️Changes propagate from the elements above to those within, like a drill ALWAYS FROM THE TOP TO THE BOTTOM.
 
 export const View = () => {
   return (

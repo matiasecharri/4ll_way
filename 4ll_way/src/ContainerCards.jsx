@@ -15,6 +15,7 @@ const spaceX = {
     "https://pbs.twimg.com/profile_images/1697749409851985920/HbrI04tM_400x400.jpg",
   formatUserName: format,
   verified: true,
+  initialIsFollowing: true,
 }; /*Using spread operator to fill TwitterFollowCard props below*/
 const fillWithRandomCards = array => {
   return array.map((element, index) => (
@@ -52,7 +53,7 @@ export const ContainerCards = () => {
           "https://pbs.twimg.com/profile_images/1506980371627450369/YEfkGEEc_400x400.jpg"
         }
         verified
-        // {...spaceX} --> You can also overwrite props using the spread operator, careful!
+        initialIsFollowing
       />
       <TwitterFollowCard
         userName={"elonmusk"}
@@ -62,6 +63,7 @@ export const ContainerCards = () => {
           "https://pbs.twimg.com/profile_images/1683325380441128960/yRsRRjGO_400x400.jpg"
         }
         verified
+        initialIsFollowing
       >
         Elon Muslim
         {/*✅03 <--AS IN HTML, AN ELEMENT INSIDE OF AN ELEMENT IS THE CHILDREN, probably if you want a really reutilizable element, passing children as a prop is a really good idea.*/}
