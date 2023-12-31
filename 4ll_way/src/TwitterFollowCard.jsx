@@ -65,7 +65,8 @@ export const TwitterFollowCard = ({
       </header>
       <aside>
         <button className={styleButton} onClick={handleClick}>
-          {text}
+          <span className="effect">{text}</span>
+          <span className="twitter-card__stop-follow">Unfollow</span>
         </button>
       </aside>
     </article>
