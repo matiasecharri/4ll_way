@@ -122,9 +122,22 @@
   -o-transition: 0.2s;
 }
 
+.twitter-card__stop-follow {
+  display: none;
+}
+
 .is-following-card:hover button {
   background-color: #f0dbdd;
   border: 1px solid #e6cbce;
   color: #f43e4a;
   transition: 0.2s;
+}
+
+.is-following-card:hover .twitter-card__stop-follow {
+  display: block;
+  width: 65px;
+}
+
+.is-following-card:hover .effect {
+  display: none;
 }

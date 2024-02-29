@@ -10,11 +10,11 @@ export const TwitterFollowCard = ({
   name2 = "Uknown", //--------------Same as JS, is possible to assign default values to the props/params.
   children /*✅01 <----------------Special PROP: CHILDREN*/,
   avatar,
+  initialIsFollowing,
   verified,
   randomElement, // 👁️01: Creating a parameter that will receive an """HTML""" element later.
 }) => {
-  const [isFollowing, setIsFollowing] = useState(false);
-  console.log(isFollowing);
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
 
   //useState returns an array with 2 elements, what we are doing here is destructuring the array.
   //the first element of the array is the actualValue of the state (false)
@@ -65,7 +65,8 @@ export const TwitterFollowCard = ({
       </header>
       <aside>
         <button className={styleButton} onClick={handleClick}>
-          {text}
+          <span className="effect">{text}</span>
+          <span className="twitter-card__stop-follow">Unfollow</span>
         </button>
       </aside>
     </article>
