@@ -1,0 +1,98 @@
+.tw-follow-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 0.8rem;
+  width: 350px;
+}
+
+.tw-follow-card header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tw-follow-card header div {
+  display: flex;
+  flex-direction: column;
+}
+
+.tw-follow-card header strong {
+  font-size: 1rem;
+}
+
+.tw-follow-card header span {
+  opacity: 0.6;
+}
+
+.tw-follow-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 360px;
+  -webkit-border-radius: 360px;
+  -moz-border-radius: 360px;
+  -ms-border-radius: 360px;
+  -o-border-radius: 360px;
+  margin-right: 10px;
+}
+
+.tw-follow-card button {
+  margin-left: 15px;
+  border: none;
+  border-radius: 360px;
+  -webkit-border-radius: 360px;
+  -moz-border-radius: 360px;
+  -ms-border-radius: 360px;
+  -o-border-radius: 360px;
+  padding: 6px 16px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.button1 {
+  background-color: rgb(255, 196, 79);
+  font-size: 2rem;
+  padding: 5px 40px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 100;
+  cursor: pointer;
+  transform: translate(60px);
+  -webkit-transform: translate(60px);
+  -moz-transform: translate(60px);
+  -ms-transform: translate(60px);
+  -o-transform: translate(60px);
+  transition: 0.44s;
+  -webkit-transition: 0.44s;
+  -moz-transition: 0.44s;
+  -ms-transition: 0.44s;
+  -o-transition: 0.44s;
+}
+.button2 {
+  background-color: rgb(223, 255, 79);
+  font-size: 2rem;
+  padding: 5px 40px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.44s;
+  -webkit-transition: 0.44s;
+  -moz-transition: 0.44s;
+  -ms-transition: 0.44s;
+  -o-transition: 0.44s;
+}
