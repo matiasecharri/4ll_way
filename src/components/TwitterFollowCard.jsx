@@ -9,6 +9,9 @@ const TwitterFollowCard = ({
   children,
 }) => {
   const [isFollowing, setIsFollowing] = useState(false);
+  useEffect(() => {
+    console.warn(isFollowing);
+  }, [isFollowing]);
 
   const imgSrc = `https://unavatar.io/${userName}`;
   const altTag = `The avatar of ${name}`;
