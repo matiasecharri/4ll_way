@@ -5,6 +5,7 @@
   color: #fff;
   font-size: 0.8rem;
   width: 350px;
+  position: relative;
 }
 
 .tw-follow-card header {
@@ -24,6 +25,7 @@
 
 .tw-follow-card header span {
   opacity: 0.6;
+  margin-top: -2px;
 }
 
 .tw-follow-card img {
@@ -35,6 +37,7 @@
   -ms-border-radius: 360px;
   -o-border-radius: 360px;
   margin-right: 10px;
+  object-fit: cover;
 }
 
 .tw-follow-card button {
@@ -95,4 +98,85 @@
   -moz-transition: 0.44s;
   -ms-transition: 0.44s;
   -o-transition: 0.44s;
+}
+
+.circle {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgb(222, 255, 57);
+}
+
+.circle::after {
+  content: "";
+  left: 12px;
+  top: -7px;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgb(222, 255, 57);
+}
+
+.circle::before {
+  content: "";
+  left: 6px;
+  top: -12px;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgb(222, 255, 57);
+}
+
+.small {
+  margin-top: 1px;
+  font-size: 0.5rem;
+}
+
+.button--follow {
+  background-color: #050404be;
+  color: white;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.button--follow:hover {
+  background-color: #050404be;
+  color: white;
+  background-color: rgb(254, 32, 87);
+
+  transition:0.3s ;
+}
+
+.button--nofollow {
+  background-color: #deff39;
+  color: rgb(26, 25, 24);
+
+  transition:0.3s ;
+}
+
+.button--nofollow:hover {
+  background-color: #7dff52;
+  color: rgb(26, 25, 24);
+
+  transition:0.3s ;
 }
