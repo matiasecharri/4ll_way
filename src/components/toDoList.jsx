@@ -7,7 +7,7 @@ const ToDoList = () => {
       ? JSON.parse(localStorage.getItem("toDoArray"))
       : []
   );
-  const [sortOrder, setSortOrder] = useState("asc");
+  const [sortOrder, setSortOrder] = useState("dsc");
 
   useEffect(() => {
     localStorage.setItem("toDoArray", JSON.stringify(toDoList));
