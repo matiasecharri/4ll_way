@@ -1,5 +1,5 @@
-import TwitterFollowCard from "./components/TwitterFollowCard";
-import Counter from "./components/Counter";
+import TwitterFollowCard from "./components/TwitterFollowCard/TwitterFollowCard";
+import Counter from "./components/Counter/Counter";
 
 const App = () => {
   const addAt = formatedName => `@${formatedName}`;

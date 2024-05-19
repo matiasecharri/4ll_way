@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "/src/components/TwitterFollowCard.css";
+import "/src/components/TwitterFollowCard/TwitterFollowCard.css";
 
 const TwitterFollowCard = ({
   randomElement,
