@@ -7,7 +7,7 @@ const App = () => {
   const miduDev = {
     randomElement: circle,
     format: addAt,
-    isFollowing: true,
+    initialIsFollowing: true,
     userName: "midudev",
     name: "Midu",
   };
@@ -20,20 +20,20 @@ const App = () => {
         <TwitterFollowCard
           randomElement={circle}
           format={addAt}
-          isFollowing
+          initialIsFollowing
           userName={"matiasecharri"}
           name={"Matias Echarri"}
         />
         <TwitterFollowCard
           format={addAt}
-          isFollowing={false}
+          initialIsFollowing={false}
           userName={"dianavodopivec"}
           name={"Diana Vodopivec"}
         />
         <TwitterFollowCard
           randomElement={circle}
           format={addAt}
-          isFollowing
+          initialIsFollowing
           userName={"jonmircha"}
           name={"Jon Mircha"}
         >
@@ -43,7 +43,7 @@ const App = () => {
         <TwitterFollowCard {...miduDev} />
         <TwitterFollowCard
           format={addAt}
-          isFollowing={false}
+          initialIsFollowing={false}
           userName={"pachupacha"}
           name={"Gabriel García"}
         />
