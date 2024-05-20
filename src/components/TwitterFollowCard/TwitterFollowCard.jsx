@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "/src/components/TwitterFollowCard.css";
+import "/src/components/TwitterFollowCard/TwitterFollowCard.css";
 
 const TwitterFollowCard = ({
   randomElement,
@@ -7,8 +7,9 @@ const TwitterFollowCard = ({
   userName = "Unknow",
   name,
   children,
+  initialIsFollowing
 }) => {
-  const [isFollowing, setIsFollowing] = useState(false);
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
   useEffect(() => {
     console.warn(isFollowing);
   }, [isFollowing]);
@@ -19,7 +20,7 @@ const TwitterFollowCard = ({
   const buttonStyle = isFollowing ? "button--follow" : "button--nofollow";
 
   const handleFollow = () => {
-    setIsFollowing(previousState => (previousState = !previousState));
+    setIsFollowing(!isFollowing);
   };
 
   return (

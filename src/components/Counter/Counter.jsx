@@ -1,4 +1,4 @@
-import "/src/components/Counter.css";
+import "/src/components/Counter/Counter.css";
 import { useState, useEffect } from "react";
 
 const Counter = () => {

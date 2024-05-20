@@ -1,3 +1,9 @@
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .tw-follow-card {
   display: flex;
   align-items: center;
@@ -164,19 +170,19 @@
   color: white;
   background-color: rgb(254, 32, 87);
 
-  transition:0.3s ;
+  transition: 0.3s;
 }
 
 .button--nofollow {
   background-color: #deff39;
   color: rgb(26, 25, 24);
 
-  transition:0.3s ;
+  transition: 0.3s;
 }
 
 .button--nofollow:hover {
   background-color: #7dff52;
   color: rgb(26, 25, 24);
 
-  transition:0.3s ;
+  transition: 0.3s;
 }
