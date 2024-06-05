@@ -5,9 +5,9 @@ import TicTacToe from "./components/TicTacToe/TicTacToe";
 const App = () => {
   return (
     <>
-      <Counter></Counter>
-      <ContainerCards></ContainerCards>
-      <TicTacToe></TicTacToe>
+      <Counter />
+      <ContainerCards />
+      <TicTacToe />
     </>
   );
 };
