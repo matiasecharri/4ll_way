@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "/src/components/TwitterFollowCard/TwitterFollowCard.css";
 
 const TwitterFollowCard = ({
@@ -7,12 +7,9 @@ const TwitterFollowCard = ({
   userName = "Unknow",
   name,
   children,
-  initialIsFollowing
+  initialIsFollowing,
 }) => {
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
-  useEffect(() => {
-    console.warn(isFollowing);
-  }, [isFollowing]);
 
   const imgSrc = `https://unavatar.io/${userName}`;
   const altTag = `The avatar of ${name}`;
