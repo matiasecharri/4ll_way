@@ -1,12 +1,8 @@
 import "/src/components/Counter/Counter.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Counter = () => {
   const [counterState, setCounterState] = useState(0);
-  
-  useEffect(() => {
-    console.log(`The counter has updated his value: ${counterState}`);
-  }, [counterState]); /*⛓️Vinculated to counter state⛓️ */
 
   const incrementCounter = () => {
     setCounterState(counterState => counterState + 1);
@@ -15,7 +11,7 @@ const Counter = () => {
     if (counterState === 0) return;
     setCounterState(counterState => counterState - 1);
   };
-  
+
   return (
     <div className="button-container">
       <button

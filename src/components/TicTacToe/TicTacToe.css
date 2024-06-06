@@ -68,9 +68,10 @@
   border-color: transparent;
 }
 
-.square.is-selected {
+.is-selected {
   color: #fff;
   background: #09f;
+  padding: 15px 10px;
 }
 
 .winner {
@@ -115,11 +116,4 @@
   place-items: center;
   cursor: pointer;
   font-size: 48px;
-}
-
-.the-turn > .square {
-  margin-top: -20px;
-  margin-left: -5px;
-  font-size: 1.5rem;
-  border: none;
 }
