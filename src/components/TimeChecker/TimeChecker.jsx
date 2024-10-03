@@ -8,7 +8,8 @@ const TimeChecker = () => {
 
   const createNewActivity = e => {
     if (e.key === "Enter") {
-      if (!e.target.value) return
+      if(!e.target.value.trim()) return
+
       const newActivity = {
         content: e.target.value,
         timeExpent: 0,
