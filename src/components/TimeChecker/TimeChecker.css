@@ -1,0 +1,86 @@
+.task-manager {
+  height: 450px;
+  width: 320px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 15px;
+}
+
+.task-manager input {
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.task-manager input:focus {
+  outline: none;
+}
+
+.task-manager__task-container {
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.task-manger__task {
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  position: relative;
+}
+.items {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  display: flex;
+  gap: 20px;
+  background-color: black;
+  padding: 0px 15px;
+  width: 290px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.items button {
+  background-color: #fdd9ab00;
+  border: none;
+  color: orange;
+  font-size: 0.7rem;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.items p {
+  margin-bottom: 6px;
+}
+
+.task-manger__task p {
+  width: 100%;
+}

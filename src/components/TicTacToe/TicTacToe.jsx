@@ -62,6 +62,12 @@ const TicTacToe = () => {
     setTurn(newTurn);
   };
 
+  const resetActions = () => {
+    setTurn(PLAYERS.X);
+    setBoard(Array(9).fill(null));
+    setWin(false);
+  };
+
   return (
     <main className="board">
       <h1> Tic Tac Toe</h1>
@@ -81,6 +87,7 @@ const TicTacToe = () => {
         <Square styles={turn === PLAYERS.O ? "is-selected" : null}>
           {PLAYERS.O}
         </Square>
+        <button onClick={resetActions}>RESTART</button>
       </section>
     </main>
   );
